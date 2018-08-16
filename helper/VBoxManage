@@ -1,0 +1,147 @@
+#!/bin/bash
+
+if [ "$#" -eq 2 -a "$1" == "list" -a "$2" == "runningvms" ]; then
+    echo "\"Sailfish OS Build Engine\" {a57366fb-5e54-4588-8b49-3135dfea51f1}"
+elif [ "$#" -eq 2 -a "$1" == "showvminfo" -a "$2" == "Sailfish OS Build Engine" ]; then
+cat << EOF
+Name:            Sailfish OS Build Engine
+Groups:          /
+Guest OS:        Linux 2.6 / 3.x / 4.x (32-bit)
+UUID:            a57366fb-5e54-4588-8b49-3135dfea51f1
+Config file:     /home/OMP/a.kozhevnikov/VirtualBox VMs/Sailfish OS Build Engine/Sailfish OS Build Engine.vbox
+Snapshot folder: /home/OMP/a.kozhevnikov/VirtualBox VMs/Sailfish OS Build Engine/Snapshots
+Log folder:      /home/OMP/a.kozhevnikov/VirtualBox VMs/Sailfish OS Build Engine/Logs
+Hardware UUID:   a57366fb-5e54-4588-8b49-3135dfea51f1
+Memory size:     8192MB
+Page Fusion:     off
+VRAM size:       10MB
+CPU exec cap:    100%
+HPET:            off
+Chipset:         piix3
+Firmware:        BIOS
+Number of CPUs:  4
+PAE:             on
+Long Mode:       on
+Triple Fault Reset: off
+APIC:            on
+X2APIC:          off
+CPUID Portability Level: 0
+CPUID overrides: None
+Boot menu mode:  message and menu
+Boot Device (1): HardDisk
+Boot Device (2): Not Assigned
+Boot Device (3): Not Assigned
+Boot Device (4): Not Assigned
+ACPI:            on
+IOAPIC:          on
+BIOS APIC mode:  APIC
+Time offset:     0ms
+RTC:             local time
+Hardw. virt.ext: on
+Nested Paging:   on
+Large Pages:     off
+VT-x VPID:       on
+VT-x unr. exec.: on
+Paravirt. Provider: Default
+Effective Paravirt. Provider: KVM
+State:           running (since 2018-06-09T08:35:13.404000000)
+Monitor count:   1
+3D Acceleration: off
+2D Video Acceleration: off
+Teleporter Enabled: off
+Teleporter Port: 0
+Teleporter Address: 
+Teleporter Password: 
+Tracing Enabled: off
+Allow Tracing to Access VM: off
+Tracing Configuration: 
+Autostart Enabled: off
+Autostart Delay: 0
+Default Frontend: 
+Storage Controller Name (0):            SATA
+Storage Controller Type (0):            IntelAhci
+Storage Controller Instance Number (0): 0
+Storage Controller Max Port Count (0):  30
+Storage Controller Port Count (0):      2
+Storage Controller Bootable (0):        on
+SATA (1, 0): /home/OMP/a.kozhevnikov/SailfishOS2/mersdk/mer.vdi (UUID: ce12e3d7-6ea6-43ca-a021-6dc90783fcd1)
+NIC 1:           MAC: 080027414953, Attachment: NAT, Cable connected: on, Trace: off (file: none), Type: virtio, Reported speed: 0 Mbps, Boot priority: 0, Promisc Policy: deny, Bandwidth group: none
+NIC 1 Settings:  MTU: 0, Socket (send: 64, receive: 64), TCP Window (send:64, receive: 64)
+NIC 1 Rule(0):   name = guestssh, protocol = tcp, host ip = 127.0.0.1, host port = 2222, guest ip = , guest port = 22
+NIC 1 Rule(1):   name = guestwww, protocol = tcp, host ip = 127.0.0.1, host port = 8080, guest ip = , guest port = 9292
+NIC 2:           MAC: 08005A11F155, Attachment: Internal Network 'sailfishsdk', Cable connected: on, Trace: off (file: none), Type: virtio, Reported speed: 0 Mbps, Boot priority: 0, Promisc Policy: deny, Bandwidth group: none
+NIC 3:           disabled
+NIC 4:           disabled
+NIC 5:           disabled
+NIC 6:           disabled
+NIC 7:           disabled
+NIC 8:           disabled
+Pointing Device: PS/2 Mouse
+Keyboard Device: PS/2 Keyboard
+UART 1:          disabled
+UART 2:          disabled
+UART 3:          disabled
+UART 4:          disabled
+LPT 1:           disabled
+LPT 2:           disabled
+Audio:           enabled (Driver: PulseAudio, Controller: AC97, Codec: STAC9700)
+Audio playback:  disabled
+Audio capture: disabled
+Clipboard Mode:  disabled
+Drag and drop Mode: disabled
+Session name:    headless
+Video mode:      800x600x32 at 0,0 enabled
+VRDE:            disabled
+USB:             disabled
+EHCI:            disabled
+XHCI:            disabled
+
+USB Device Filters:
+
+<none>
+
+Available remote USB devices:
+
+<none>
+
+Currently Attached USB Devices:
+
+<none>
+
+Bandwidth groups:  <none>
+
+Shared folders:  
+
+Name: 'home', Host path: '/home/OMP/a.kozhevnikov' (machine mapping), writable
+Name: 'src1', Host path: '/home/OMP/a.kozhevnikov' (machine mapping), writable
+Name: 'ssh', Host path: '/home/OMP/a.kozhevnikov/SailfishOS2/mersdk/ssh' (machine mapping), readonly
+Name: 'targets', Host path: '/home/OMP/a.kozhevnikov/SailfishOS2/mersdk/targets' (machine mapping), writable
+Name: 'vmshare', Host path: '/home/OMP/a.kozhevnikov/SailfishOS2/vmshare' (machine mapping), readonly
+
+VRDE Connection:    not active
+Clients so far:     0
+
+Capturing:          not active
+Capture screens:    0
+Capture file:       /home/OMP/a.kozhevnikov/VirtualBox VMs/Sailfish OS Build Engine/Sailfish OS Build Engine.webm
+Capture dimensions: 1024x768
+Capture rate:       512 kbps
+Capture FPS:        25
+Capture options:    ac_enabled=false
+
+Guest:
+
+Configured memory balloon size:      0 MB
+OS type:                             Linux26
+Additions run level:                 2
+Additions version:                   4.3.22 r98236
+
+
+Guest Facilities:
+
+Facility "VirtualBox Base Driver": active/running (last update: 2018/06/09 08:35:25 UTC)
+Facility "VirtualBox System Service": active/running (last update: 2018/06/09 08:35:25 UTC)
+Facility "Seamless Mode": not active (last update: 2018/06/09 08:35:25 UTC)
+Facility "Graphics Mode": not active (last update: 2018/06/09 08:35:25 UTC)
+EOF
+fi
