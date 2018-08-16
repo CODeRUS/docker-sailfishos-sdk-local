@@ -1,1 +1,1 @@
-docker build --build-arg local_uid=10001 --build-arg local_gid=10001 -t salifishos-platform-sdk-local .
+docker build --build-arg local_uid=10001 --build-arg local_gid=10001 -t sailfishos-platform-sdk-local .
