@@ -42,4 +42,12 @@ RUN set -ex ;\
 
 USER mersdk
 
+RUN set -ex ;\
+# create mersdk user with your local gid and uid to have write privileges during build \
+ for t in $(sdk-assistant target list) ;\
+ do \
+  sb2 -t $t -m sdk-install -R groupadd -g $local_gid -r mersdk ;\
+  sb2 -t $t -m sdk-install -R useradd -u $local_uid -g mersdk -r mersdk ;\
+ done
+
 CMD ["/start.sh"]
