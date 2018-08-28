@@ -6,4 +6,4 @@ else
     CMD="$@"
 fi
 
-docker run --privileged -it -v=$(pwd):/home/mersdk/share -w=/home/mersdk/share obs-sdk-local mb2 $CMD
+docker run --privileged -it -v=$(pwd):/home/mersdk/share -w=/home/mersdk/share sailfishos-platform-sdk-local mb2 $CMD
