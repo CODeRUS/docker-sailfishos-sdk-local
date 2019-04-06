@@ -41,6 +41,7 @@ RUN set -ex ;\
  chmod +x /start.sh
 
 USER mersdk
+WORKDIR /home/mersdk
 
 RUN set -ex ;\
 # create mersdk user with your local gid and uid to have write privileges during build \
