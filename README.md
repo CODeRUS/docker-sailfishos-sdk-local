@@ -1,6 +1,8 @@
-# Scripts and helpers for building packages and images using dockerized Platform SDK
+# Replaced with: https://github.com/CODeRUS/docker-sailfishos-buildengine
 
-## TLDR
+### Scripts and helpers for building packages and images using dockerized Platform SDK
+
+#### TLDR
 
 1. Run `build.sh`
 2. Image tagged `sailfishos-platform-sdk-local` will be generated
@@ -8,7 +10,7 @@
 4. Command `sdk-build-package` will be added to your PATH
 5. To start container build engine run `run.sh`
 
-## Summary
+#### Summary
 
 Dockerfile contains instructions to create a new user called `mersdk` inside new image
 called `sailfishos-platform-sdk-local` which is based on `coderus/sailfishos-platform-sdk`
@@ -17,7 +19,7 @@ current folder.
 
 Additionally there are handy helpers to execute rpm build (mb2) build operations.
 
-## Build
+#### Build
 
 You must have Docker installed and started.
 
@@ -37,13 +39,13 @@ You must have Docker installed and started.
 
 ```./install.sh```
 
-## Extra
+#### Extra
 
 This image can be used to work with Sailfish OS SDK instead on virtual machine
 
 Run `run.sh` to start build engine. It will start container with ssh server running on port `2222` and web server on `8080`.
 
-## Credits
+#### Credits
 
 - [EvilJazz](https://github.com/evilJazz/sailfishos-buildengine) for the inspiration
 - [SfietKonstantin](https://github.com/SfietKonstantin/docker-sailfishos-sdk) for the initial version of scripts
