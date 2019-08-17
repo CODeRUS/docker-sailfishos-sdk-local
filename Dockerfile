@@ -22,7 +22,7 @@ RUN set -ex ;\
 # copy sb2 targets config from nemo to mersdk user \
  cp -r /home/nemo/.scratchbox2 /home/mersdk ;\
 # change ownership from default nemo user to new mersdk one \
- chown mersdk:mersdk home/deploy ;\
+ chown mersdk:mersdk /home/deploy ;\
  chown -R mersdk:mersdk /home/mersdk/.scratchbox2/ ;\
  find /srv/mer/targets/* -print0 | xargs -0 --max-args=1 --max-procs=16 chown -h mersdk:mersdk ;\
 # transform platform sdk to application sdk \
@@ -41,6 +41,7 @@ RUN set -ex ;\
  chmod +x /start.sh
 
 USER mersdk
+WORKDIR /home/mersdk
 
 RUN set -ex ;\
 # create mersdk user with your local gid and uid to have write privileges during build \
